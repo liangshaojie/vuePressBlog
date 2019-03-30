@@ -1,0 +1,17 @@
+{
+  "name": "vuepressProject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "gh-pages -d dist",
+    "deploy:build": "npm run docs:build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "vuepress": "^0.14.10",
+    "webpack-dev-middleware": "^3.6.0"
+  }
+}
